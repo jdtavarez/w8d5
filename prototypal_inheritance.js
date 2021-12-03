@@ -4,6 +4,7 @@ Function.prototype.inheritsES5= function(parent) {
     this.prototype = new Surrogate();
     this.prototype.construtor = this;
 };
+
 // function MovingObject() {}
 // MovingObject.prototype.movObjLog = function() {
 //     console.log('moving object maybe')
@@ -20,6 +21,7 @@ Function.prototype.inheritsES5= function(parent) {
 
 // const b = new Ship();
 // b.movObjLog();
+
 Function.prototype.inheritsES6 = function(parent) {
     this.prototype = Object.create(parent.prototype);
     this.prototype.construtor = this;
